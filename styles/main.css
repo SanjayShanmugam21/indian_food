@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Lora&family=Playfair+Display&family=Raleway&family=Poppins&family=Cormorant&family=Oswald&family=Dancing+Script&display=swap');
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50; /* Green background */
+    padding: 10px 20px;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+.logo img {
+    margin-left: 8px; /* Spacing for the logo */
+}
+
+/* Navigation Links */
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+ul li a {
+    text-decoration: none;
+    color: white; /* Changed to white for contrast */
+    font-size: 18px;
+    transition: color 0.3s;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+   
+}
+.nav_brand{
+font-size: 30px;
+}
+ul li a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Menu Toggle Button */
+.menu_toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu_toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu_toggle {
+        display: flex; /* Show menu toggle on mobile */
+    }
+
+    ul {
+        display: none; /* Hide the nav list by default */
+        flex-direction: column; /* Stack links */
+        width: 100%; /* Full width */
+        background-color: #4CAF50; /* Match navbar color */
+        position: absolute; /* Positioning */
+        top: 60px; /* Below the navbar */
+        left: 0; /* Align to left */
+        z-index: 1; /* On top of other elements */
+    }
+
+    ul.show {
+        display: flex; /* Show the nav list when active */
+    }
+
+    ul li {
+        width: 100%; /* Full width for each link */
+    }
+
+    ul li a {
+        display: block; /* Make links block level */
+        padding: 10px; /* Add padding for easier clicks */
+        text-align: center; /* Center text */
+        width: 100%; /* Full width for each link */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    ul {
+        gap: 15px; /* Slightly reduced space between links */
+    }
+
+    ul li a {
+        font-size: 16px; /* Slightly smaller font for tablet */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    ul {
+        display: flex; /* Ensure nav is always visible on desktop */
+    }
+
+    ul li a {
+        font-size: 18px; /* Standard font size for desktop */
+    }
+}
+
+/* home section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.floated-image {
+    float: left;
+    margin-right: 15px;
+    height: 350px;
+    width: 250px;
+    border-radius: 50px 0px 50px 0px;
+    border: 5px ridge orangered;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .main-content {
+        flex-direction: column;
+    }
+    .sidebar_menu li a {
+        display: none; /* Hide the nav list by default */
+        flex-direction: column; /* Stack links */
+        width: 100%; /* Full width */
+        background-color: #4CAF50; /* Match navbar color */
+        position: absolute; /* Positioning */
+        top: 60px; /* Below the navbar */
+        left: 0; /* Align to left */
+        z-index: 1; /* On top of other elements */
+        color: whitesmoke;
+       
+    }
+    .content, .sidebar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .paragraph{
+        font-size: 20px;
+    }
+    .sub_heading{
+        font-size: 10px;
+        font-family: 'Dancing Script', cursive ;
+    }
+}
+.text{
+color: black;
+font-weight: bold;
+
+}
+.SH_01{
+    color: #4CAF50;
+}
+.SH_02{
+    color: black;
+}
+
+.main_heading{
+    font-weight: bold;
+    font-size: 50px;
+    color: #f4f4f4;
+    background-color: orangered;
+    border-radius: 20px 0px 20px 0px;
+    font-family: 'Dancing Script', cursive;
+    padding: 15px;
+}
+.main_heading_01{
+    font-weight: bold;
+    font-size: 50px;
+    color: #f4f4f4;
+    background-color: #FFD700;
+    border-radius: 20px 0px 20px 0px;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+}
+.sub_heading{
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+   
+}
+.paragraph{
+    text-indent: 30px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.sub_title{
+    font-size: 30px;
+    font-family:'Montserrat', sans-serif ;
+}
+.sidebar_menu  {
+    display: block;
+}
+/* footer section */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-image: linear-gradient(Green,rgb(51, 92, 41)); /* Dark background */
+    color: white;
+    /* padding: 40px 20px; */
+    text-align: center;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.footer-nav {
+    margin-bottom: 20px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav li {
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    color: #ecf0f1; /* Light gray */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    height: 24px;
+    width: 24px;
+    transition: transform 0.3s;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 600px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-nav {
+        flex-grow: 1;
+    }
+}

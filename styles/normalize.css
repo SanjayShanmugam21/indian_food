@@ -1,0 +1,114 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    gap: 20px; /* Space between sidebar and article */
+}
+
+.sidebar {
+    flex: 1 1 25%; /* Sidebar takes 25% of the width */
+    min-width: 250px; /* Minimum width for sidebar */
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.article {
+    flex: 1 1 70%; /* Article takes 70% of the width */
+}
+
+/* .video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+} */
+
+.description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #555;
+}
+
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+   
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack sidebar and article on small screens */
+    }
+
+    .sidebar, .article {
+        flex: 1 1 100%; /* Full width for smaller screens */
+    }
+}
+.flex_content{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
